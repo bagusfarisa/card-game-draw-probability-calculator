@@ -21,8 +21,8 @@ p_none = dc.p_none(freq, draw, deck_size)
 
 p_at_least_n = round(p_at_least_n*100,1)
 p_at_least_one = round(p_at_least_one*100,1)
-p_at_least_n = round(p_at_least_n*100,1)
 p_exactly_n = round(p_exactly_n*100,1)
+p_exactly_one = round(p_exactly_one*100,1)
 p_none = round(p_none*100,1)
 
 if n_expected == 1:
