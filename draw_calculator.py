@@ -1,6 +1,6 @@
 # Chance to draw none of the combo pieces
 def p_none(freq, draw=7, deck_size=60):
-    p_not = 1.0;
+    p_not = 1.0
     for j in range(draw):
         p_not *= float(deck_size - j - freq) / float(deck_size - j)
         
