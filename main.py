@@ -19,24 +19,17 @@ p_none = dc.p_none(freq, draw, deck_size)
 
 # Display the probs on the streamlit
 
+p_at_least_n = round(p_at_least_n*100,1)
+p_at_least_n = round(p_at_least_n*100,1)
+p_exactly_n = round(p_exactly_n*100,1)
+p_none = round(p_none*100,1)
+
 if n_expected == 1:
-    p_at_least_n = round(p_at_least_n*100,1)
     st.success(f"{p_at_least_n}% to draw at least {n_expected} of the combo piece(s).")
-
-    p_exactly_n = round(p_exactly_n*100,1)
-    st.success(f"{p_exactly_n}% to draw exactly {n_expected} of the combo piece(s).")
-
-    p_none = round(p_none*100,1)
+    st.success(f"{p_exactly_n}% to draw exactly {n_expected} of the combo piece(s).")    
     st.error(f"{p_none}% to draw none of the combo piece(s).")
 else:
-    p_at_least_one = round(p_at_least_one*100,1)
     st.success(f"{p_at_least_one}% to draw at least 1 of the combo piece(s).")
-
-    p_at_least_n = round(p_at_least_n*100,1)
     st.success(f"{p_at_least_n}% to draw at least {n_expected} of the combo piece(s).")
-
-    p_exactly_n = round(p_exactly_n*100,1)
     st.success(f"{p_exactly_n}% to draw exactly {n_expected} of the combo piece(s).")
-
-    p_none = round(p_none*100,1)
     st.error(f"{p_none}% to draw none of the combo piece(s).")
