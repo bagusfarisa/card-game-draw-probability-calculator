@@ -20,6 +20,7 @@ p_none = dc.p_none(freq, draw, deck_size)
 # Display the probs on the streamlit
 
 p_at_least_n = round(p_at_least_n*100,1)
+p_at_least_one = round(p_at_least_one*100,1)
 p_at_least_n = round(p_at_least_n*100,1)
 p_exactly_n = round(p_exactly_n*100,1)
 p_none = round(p_none*100,1)
