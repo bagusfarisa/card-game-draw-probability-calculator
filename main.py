@@ -7,7 +7,7 @@ st.subheader('Show the odds of you drawing your deck\'s combo piece(s).')
 deck_size = st.number_input(label='The deck size:',value=12,format='%a')
 freq = st.number_input(label='Number of combo piece(s):',value=3,format='%a')
 draw = st.number_input(label='Number of card(s) in your starting hand:',value=4,format='%a')
-n_expected = st.number_input(label='Number of combo piece(s) you expect to draw in starting hand:',value=1,format='%a')
+n_expected = st.number_input(label='Number of combo piece(s) you expect to draw in starting hand:',value=2,format='%a')
 
 
 p_exactly_n = dc.p_exactly(n_expected,freq, draw, deck_size)
